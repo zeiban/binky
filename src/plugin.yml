@@ -1,0 +1,15 @@
+name: GitBackup
+main: me.garrland.GitBackupPlugin
+author: Garrland
+version: 0.0.1
+description: Backup Revisioned Worlds with GIT
+commands:
+   git-commit: 
+      description: Commits current state of the world to the repository
+      usage: /git-commit world comment
+   git-log:
+      description: Displays the commit log
+      usage: /git-log
+   git-reset:
+      description: Reset the state of the world
+      usage: /git-reset 
