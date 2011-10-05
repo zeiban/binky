@@ -7,8 +7,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class GitLogCommandExecutor implements CommandExecutor {
-	private GitBackupPlugin plugin;
-	public GitLogCommandExecutor(GitBackupPlugin plugin) {
+	private BinkyPlugin plugin;
+	public GitLogCommandExecutor(BinkyPlugin plugin) {
 		this.plugin = plugin;
 	}
 

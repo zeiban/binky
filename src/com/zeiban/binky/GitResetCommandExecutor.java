@@ -8,8 +8,8 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
 public class GitResetCommandExecutor implements CommandExecutor {
-	private GitBackupPlugin plugin;
-	public GitResetCommandExecutor(GitBackupPlugin plugin) {
+	private BinkyPlugin plugin;
+	public GitResetCommandExecutor(BinkyPlugin plugin) {
 		this.plugin = plugin;
 	}
 

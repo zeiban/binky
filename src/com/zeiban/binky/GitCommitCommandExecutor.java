@@ -11,8 +11,8 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
 public class GitCommitCommandExecutor implements CommandExecutor {
-	private GitBackupPlugin plugin;
-	public GitCommitCommandExecutor(GitBackupPlugin plugin) {
+	private BinkyPlugin plugin;
+	public GitCommitCommandExecutor(BinkyPlugin plugin) {
 		this.plugin = plugin;
 	}
 
