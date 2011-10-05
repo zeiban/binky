@@ -1,8 +1,8 @@
-name: GitBackup
-main: me.garrland.GitBackupPlugin
-author: Garrland
+name: Binky
+main: com.zeiban.BinkyPlugin
+author: Zeiban
 version: 0.0.1
-description: Backup Revisioned Worlds with GIT
+description: Backup and Restore Worlds using Git
 commands:
    git-commit: 
       description: Commits current state of the world to the repository
