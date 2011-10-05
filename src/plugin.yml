@@ -1,5 +1,5 @@
 name: Binky
-main: com.zeiban.BinkyPlugin
+main: com.zeiban.binky.BinkyPlugin
 author: Zeiban
 version: 0.0.1
 description: Backup and Restore Worlds using Git
