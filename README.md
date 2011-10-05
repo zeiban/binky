@@ -1,6 +1,9 @@
+BINKY
+========
+
 CURRENTLY UNSTABLE - NOT RECOMMENDED FOR LIVE BUKKIT SERVERS
 
-#### Bukkit Plugin for Git World Backups ####
+#### Bukkit Plugin for Realtime Git World Backups ####
 
 Ever notice that your world backups are getting huge even when you compress them? Why store a complete backup when you can use the power of Git to only store the changes made between backups. That is the aim of this project.
 

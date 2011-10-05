@@ -1,0 +1,42 @@
+<project name="Binky">
+	<property name="src" location="src"/>
+	<property name="build" location="build"/>
+	<property name="dist"  location="dist"/>
+	<property name="lib"  location="lib"/>
+	<property name="test"  location="test"/>
+	<property name="plugins"  location="${test}/plugins"/>
+	
+	<target name="init">
+		<mkdir dir="${build}"/>
+	</target>
+	
+	<target name="compile" depends="init">
+		<javac srcdir="${src}" destdir="${build}">
+			<classpath>
+		    	<fileset dir="${lib}">
+		        	<include name="**/*.jar"/>
+		     	</fileset>
+			</classpath>
+		</javac>
+		<copy file="${src}/plugin.yml" todir="${build}"/>
+	</target>
+	
+	<target name="dist" depends="compile">
+		<mkdir dir="${dist}"/>
+		<jar jarfile="${dist}/binky.jar" basedir="${build}">
+			<zipfileset 
+				src="lib/org.eclipse.jgit-1.1.0.201109151100-r.jar"  
+				excludes="META-INF/**,about.html,plugin.properties"/>  
+		</jar>
+	</target>
+
+	<target name="deploy" depends="dist">
+		<mkdir dir="${test}/plugins"/>
+		<copy file="${dist}/binky.jar" todir="${plugins}"/>
+	</target>
+
+	<target name="clean">
+		<delete dir="${build}"/>
+		<delete dir="${dist}"/>
+	</target>
+</project>
